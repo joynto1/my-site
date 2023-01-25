@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #393b63;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color:#393b63;
+}
+.logo{
+    color: aliceblue;
+    
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    background-color: #393b63;
+
+}
+.navlinks li {
+    margin-top: 15px;
+    list-style: none;
+     margin-left: 30px;
+     padding: 10px 20px;
+      transition:all .5s ease;
+     border-radius: 5px;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: .3s;
+    font-weight: bold;
+}
+.navlinks li  a:hover{
+    border-bottom: 1px solid aliceblue;
+    margin-top: 50px; 
+    padding: 10px 20px;
+    color:aqua ;
+}
+.toggle_btn {
+    width: 35px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    cursor: pointer;
+    display: none;
+}
+.toggle_btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    
+    margin-bottom: 8px;
+}
+
+/* profile///////////////////////////// */
+.profile{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+.profile_details{
+    width: 70%;
+}
+.name{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 70px;
+}
+h3{
+    color: aliceblue;
+    font-size: 40px;
+}
+h5{
+    color: rgb(150, 145, 145);
+}
+.profile_details h5{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.profile_details h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.image img{
+    width: 100%;
+    border-radius: 500px;
+}
+ i{
+padding: 5px;
+background-color: rgb(71, 211, 211);
+border-radius: 5px;
+}
+.gmail{
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?????????????????????????//mobile varsion */
+@media (max-width:858px) {
+    
+    .toggle_btn{
+        display: block;
+    }
+ .navlinks  {
+        justify-content: left;
+        flex-direction: column;
+        position: fixed;
+        height: 93vh; 
+        display: none;
+        top: 50px;
+        width: 300px;
+        text-align: center;        
+}
+.navlinks li {  
+    margin-top: 80px;
+    margin-left: 0px;
+}
+ 
+
+#navbar.show{
+    display: block;
+    right: 0px;
+}
+.image img{
+    position:static;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.profile{
+flex-direction:column-reverse; 
+   
+
+}
+.profile_details{
+    margin-top:0px;
+}
+
+.work{
+    
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.name{
+    margin-top: -80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 45px;
+    text-align: center;
+    
+}
+.gmail,.phone{
+    
+    font-size: 16px;
+    margin-left: 15px;
+    align-items: center;
+}
+.gmailAndohone{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+}
