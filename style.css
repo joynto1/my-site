@@ -1,15 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #393b63;
+    background-color: #2f3046;
     color: aliceblue;
+    overflow: hidden;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color:#393b63;
+    background-color:#2f3046;
 }
 .logo{
     color: aliceblue;
@@ -18,7 +19,7 @@ nav{
 .navlinks{
     display: flex;
     justify-content: space-around;
-    background-color: #393b63;
+    background-color: #2f3046;
 
 }
 .navlinks li {
@@ -57,6 +58,7 @@ nav{
     font-weight: bold;
     color: #353b48;
     margin-bottom: 8px;
+   
 }
 
 /* profile///////////////////////////// */
@@ -73,6 +75,16 @@ nav{
     color: aliceblue;
     font-weight: bold;
     font-size: 70px;
+}
+
+
+@keyframes animate{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 h3{
     color: aliceblue;
@@ -365,7 +377,16 @@ li{
     
 }
 
+/* dynamic tex */
+.name_titlle{
+    color: rgb(220, 54, 220);
+}
 
+.text-second{
+    color: rgb(220, 54, 220);
+    font-weight: bold;
+    
+}
 
 
 
@@ -395,6 +416,7 @@ li{
     
     .toggle_btn{
         display: block;
+        position: fixed;
     
     }
  .navlinks  {
@@ -403,20 +425,23 @@ li{
         position: fixed;
         height: 100vh; 
         display: none;
-        top: 80px;
-        width: 300px;
+        top: 0px;
+        background:#1d1f44b4;
+        width: 50%;
+        right: 0px;
+        transition: all 1s ease-out;
         text-align: center;        
 }
 .navlinks li {  
     margin-top: 80px;
     margin-left: 0px;
+    
 }
  
 
 #navbar.show{
     display: block;
-    right: 0px;
-    border-left: 1px solid aquamarine;
+    
 }
 .image img{
     position:static;
@@ -444,9 +469,15 @@ flex-direction:column-reverse;
     margin-bottom: 30px;
     display: flex;
     justify-content:  space-between;
-    font-size: 32px;
+    font-size: 35px;
     text-align: center;
     
+}
+
+.text-second{
+    color: rgb(223, 19, 223);
+    font-weight: bold;
+    font-size: 20px;
 }
 .gmail,.phone{
     
@@ -464,6 +495,7 @@ flex-direction:column-reverse;
     margin-top: -60px;
     margin-left: 230px;
     animation: html_per 3s;
+    
 }
 .skills_per_css{
     margin-top: -60px;
