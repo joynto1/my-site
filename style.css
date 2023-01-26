@@ -54,7 +54,8 @@ nav{
     width: 100%;
     height: 2px;
     background-color: aliceblue;
-    
+    font-weight: bold;
+    color: #353b48;
     margin-bottom: 8px;
 }
 
@@ -152,6 +153,82 @@ li{
 .html{
     width: 97%;
     animation: html 3s;
+}
+.skills_per_html{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 400px;
+    font-weight: bold;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    animation: html_per 3s;
+}
+.skills_per_css{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 395px;
+    font-weight: bold;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    animation: css_per 3s;
+}
+.skills_per_javascript{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 200px;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    font-weight: bold;
+    animation: java_per 3s;
+}
+.skills_per_php{
+    position: absolute;
+    margin-top: -60px;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    margin-left: 110px;
+    font-weight: bold;
+    animation: php_per 3s;
+}
+@keyframes  html_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:400px;
+    }
+}
+@keyframes  css_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:395px;
+    }
+}
+@keyframes  java_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:200px;
+    }
+}
+@keyframes  php_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:110px;
+    }
+}
+.skills li h3{
+    font-size: 15px;
+    padding: 10px;
 }
 
 .css{
@@ -265,10 +342,11 @@ li{
 .contact_virtual a{
     text-decoration: none;
     color: aliceblue;
-    padding-left: 20px;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    align-items: center;
+   
     
 }
 .contact_virtual a i{
@@ -311,19 +389,21 @@ li{
 
 
 
+
 /* ?????????????????????????//mobile varsion */
-@media (max-width:858px) {
+@media (max-width:858px){
     
     .toggle_btn{
         display: block;
+    
     }
  .navlinks  {
         justify-content: left;
         flex-direction: column;
         position: fixed;
-        height: 93vh; 
+        height: 100vh; 
         display: none;
-        top: 50px;
+        top: 80px;
         width: 300px;
         text-align: center;        
 }
@@ -336,6 +416,7 @@ li{
 #navbar.show{
     display: block;
     right: 0px;
+    border-left: 1px solid aquamarine;
 }
 .image img{
     position:static;
@@ -354,48 +435,113 @@ flex-direction:column-reverse;
 
 .work{
     
-    font-size: 25px;
+    font-size: 19px;
     font-weight: bold;
     text-align: center;
 
 }
 .name{
-    margin-top: -80px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 45px;
+    justify-content:  space-between;
+    font-size: 32px;
     text-align: center;
     
 }
 .gmail,.phone{
     
-    font-size: 16px;
-    margin-left: 15px;
+    font-size: 20px;
     align-items: center;
 }
 .gmailAndohone{
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
 }
+.skills_per_html{
+    margin-top: -60px;
+    margin-left: 230px;
+    animation: html_per 3s;
+}
+.skills_per_css{
+    margin-top: -60px;
+    margin-left: 220px;
+    animation: css_per 3s;
+}
+.skills_per_javascript{
+    margin-top: -40px;
+    margin-left: 110px;
+    animation: java_per 3s;
+}
+
+.skills_per_php{
+    margin-top: -60px;
+    margin-left: 60px;
+    animation: php_per 3s;
+}
+ 
+@keyframes  html_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:230px;
+    }
+}
+@keyframes  css_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:220px;
+    }
+}
+
+@keyframes  java_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:110px;
+    }
+}
+@keyframes  php_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:60px;
+    }
+}
+
 .skills{
     width: 315px;
 }
-.skills li h3{
-    font-size: 15px;
-    padding: 10px;
-}
+
 .about_me{
     width: 88%;
     border-radius: 10px;
 }
 .contact_virtual a {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 footer small{
     font-size: 15px;
     
 }
+.contact_tittle{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+}
+.two_site{
+    margin-bottom: 50px;
+}
+
 }
