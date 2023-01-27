@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: #2f3046;
     color: aliceblue;
-    overflow: hidden;
+    
 }
 nav{
     display: flex;
@@ -104,7 +104,18 @@ h5{
 .image img{
     width: 100%;
     border-radius: 500px;
+    animation: image_img 3s;
 }
+/* @keyframes image_img{
+    50%{
+        top:10px;
+        bottom: 10px;
+    }
+    50%{
+        top:100px;
+        bottom: 100px;
+    }
+} */
  .gmail i,.phone i{
 padding: 5px;
 background-color: rgb(71, 211, 211);
@@ -331,13 +342,19 @@ li{
     
 }
 #check_read:checked~#read_more{
+    
     display: none;
+    transition: all .5s ease;
 }
 #check_read:checked~#read_less{
     display: block;
+    transition: all .5s ease;
+
 }
 #check_read:checked~.hide_content{
     display: block;
+    transition: all .5s ease;
+
 
 }
 .contact_virtual{
