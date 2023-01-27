@@ -42,15 +42,15 @@ nav{
     padding: 10px 20px;
     color:aqua ;
 }
-.toggle_btn {
+/* .toggle_btn {
     width: 35px;
     position: absolute;
     right: 30px;
     top: 25px;
     cursor: pointer;
     display: none;
-}
-.toggle_btn span{
+} */
+/* .toggle_btn {
     display:block;
     width: 100%;
     height: 2px;
@@ -58,7 +58,29 @@ nav{
     font-weight: bold;
     color: #353b48;
     margin-bottom: 8px;
+    
    
+} */
+input{
+    display: none;
+}
+#bar{
+    position: absolute;
+    font-size: 40px;
+    right: 50px;
+    top: 20px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+#cancel{
+    position: absolute;
+    font-size: 40px;
+    right: 150px;
+    top: 20px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
 }
 
 /* profile///////////////////////////// */
@@ -431,21 +453,16 @@ li{
 /* ?????????????????????????//mobile varsion */
 @media (max-width:858px){
     
-    .toggle_btn{
-        display: block;
-        position: fixed;
-    
-    }
  .navlinks  {
         justify-content: left;
         flex-direction: column;
         position: fixed;
         height: 100vh; 
-        display: none;
         top: 0px;
-        background:#1d1f44b4;
+        background:#0f1f51b4;
+        display: none;
         width: 50%;
-        right: 0px;
+        right: 0%;
         transition: all 1s ease-out;
         text-align: center;        
 }
@@ -454,12 +471,24 @@ li{
     margin-left: 0px;
     
 }
- 
-
+#bar{
+    display: block;
+    position: fixed;
+}
+#cancel{
+    position: fixed;
+}
+#check:checked~label #bar{
+    display: none;
+   }
+   #check:checked~label #cancel{
+    display: block;
+    tra
+   }
 #navbar.show{
     display: block;
     
-}
+}  
 .image img{
     position:static;
     width: 50%;
