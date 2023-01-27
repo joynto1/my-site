@@ -13,7 +13,9 @@ nav{
     background-color:#2f3046;
 }
 .logo{
-    color: aliceblue;
+    width: 80px;
+    padding-top: 10px;
+
     
 }
 .navlinks{
@@ -459,6 +461,7 @@ input.form_gmail{
     margin-bottom: 20px;
     padding: 10px 15px;
     outline: none;
+    text-transform: capitalize;
 }
 .submit{
    position: relative;
