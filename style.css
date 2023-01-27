@@ -483,10 +483,9 @@ li{
    }
    #check:checked~label #cancel{
     display: block;
-    tra
    }
 #navbar.show{
-    display: block;
+    display:block;
     
 }  
 .image img{
