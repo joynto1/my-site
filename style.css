@@ -333,7 +333,7 @@ li{
     justify-content: center;
     width: 50%;
     padding: 15px;
-    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); ;
+    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
 }
 .about_tittle{
     text-align: center;
@@ -426,6 +426,148 @@ li{
     font-weight: bold;
     
 }
+form{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+input.form_gmail{
+    background:#fff;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 600px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    
+}
+.opinion_box{
+    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
+    padding: 20px;
+    border-radius: 10px;
+}
+.form_pass{
+    background: #fff;
+    border: none;
+    display: block;
+    height: 200px;
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    outline: none;
+}
+.submit{
+   position: relative;
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 20px 0;
+   color: #03e9f4;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: .5s;
+   border-radius: 10px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   overflow: hidden;
+   margin-left: 450px;
+   box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
+
+}
+.submit:hover{
+background: aqua;
+color:black;
+box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 200px #03e9f4;      
+    }
+    .submit span{
+        position: absolute;
+        display: block;
+    }
+.submit span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,aqua);
+    animation: animate1 1.5s linear infinite;
+}
+@keyframes animate1 {
+    0%{
+         left: -100%;
+    }
+    50%,100%{
+          left: 100%;
+    }
+}
+.submit span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,aqua);
+    animation: animate2 1.5s linear infinite;
+}
+@keyframes animate2 {
+    0%{
+         top: -100%;
+    }
+    50%,100%{
+          top: 100%;
+    }
+}
+
+.submit span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,aqua);
+    animation: animate3 1.5s linear infinite;
+}
+@keyframes animate3 {
+    0%{
+         right: -100%;
+    }
+    50%,100%{
+          right: 100%;
+    }
+}
+.submit span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,aqua);
+    animation: animate4 1.5s linear infinite;
+}
+@keyframes animate4 {
+    0%{
+         bottom: -100%;
+    }
+    50%,100%{
+          bottom: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -620,5 +762,48 @@ footer small{
 .two_site{
     margin-bottom: 50px;
 }
+
+
+
+
+
+
+input.form_gmail{ 
+    width: 350px;
+     margin-left: 0px;
+    
+    
+}
+
+.form_pass{
+    height: 200px;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+}
+.submit{
+   position: relative;
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 20px 0;
+   color: #03e9f4;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: .5s;
+   border-radius: 10px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   overflow: hidden;
+   margin-left: 250px;
+   box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
+
+}
+
+
+
+
+
+
 
 }
