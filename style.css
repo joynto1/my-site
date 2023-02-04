@@ -88,7 +88,7 @@ input{
 /* profile///////////////////////////// */
 .profile{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-top: 20px;
     align-items: center;
 }
@@ -126,9 +126,11 @@ h5{
     margin-bottom: 30px;
 }
 .image img{
-    width: 100%;
+    width: 60%;
     border-radius: 500px;
-    animation: image_img 3s;
+    margin-left: 30%;
+    margin-top: 30px;
+     
 }
 /* @keyframes image_img{
     50%{
@@ -241,6 +243,16 @@ li{
     font-weight: bold;
     animation: php_per 3s;
 }
+.skills_per_react{
+    position: absolute;
+    margin-top: -60px;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    margin-left:170px;
+    font-weight: bold;
+    animation: react_per 3s;
+}
 @keyframes  html_per{
     0%{
         margin-left: 10px;
@@ -273,6 +285,14 @@ li{
         margin-left:110px;
     }
 }
+@keyframes  react_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:170px;
+    }
+}
 .skills li h3{
     font-size: 15px;
     padding: 10px;
@@ -291,6 +311,10 @@ li{
 .php{
     width: 30%;
     animation: php 3s;
+}
+.react{
+    width: 44%;
+    animation: react 3s;
 }
 @keyframes html{
     0%{
@@ -322,6 +346,14 @@ li{
     }
     100%{
         width: 30%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 44%;
     }
 }
 .about_parent{
@@ -703,6 +735,16 @@ flex-direction:column-reverse;
     margin-left: 60px;
     animation: php_per 3s;
 }
+.skills_per_react{
+    position: absolute;
+    margin-top: -60px;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    margin-left:95px;
+    font-weight: bold;
+    animation: react_per 3s;
+}
  
 @keyframes  html_per{
     0%{
@@ -735,6 +777,14 @@ flex-direction:column-reverse;
     }
     100%{
         margin-left:60px;
+    }
+}
+@keyframes  react_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:95px;
     }
 }
 
