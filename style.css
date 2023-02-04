@@ -233,6 +233,16 @@ li{
     font-weight: bold;
     animation: java_per 3s;
 }
+.skills_per_react{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 200px;
+    padding: 5px;
+    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    border-radius: 15px;
+    font-weight: bold;
+    animation: java_per 3s;
+}
 .skills_per_php{
     position: absolute;
     margin-top: -60px;
@@ -243,16 +253,7 @@ li{
     font-weight: bold;
     animation: php_per 3s;
 }
-.skills_per_react{
-    position: absolute;
-    margin-top: -60px;
-    padding: 5px;
-    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
-    border-radius: 15px;
-    margin-left:170px;
-    font-weight: bold;
-    animation: react_per 3s;
-}
+ 
 @keyframes  html_per{
     0%{
         margin-left: 10px;
@@ -307,15 +308,16 @@ li{
     width: 50%;
     animation: javascript 3s;
 }
+.react{
+    width: 50%;
+    animation: react 3s;
+}
 
 .php{
     width: 30%;
     animation: php 3s;
 }
-.react{
-    width: 44%;
-    animation: react 3s;
-}
+ 
 @keyframes html{
     0%{
         width: 0%;
@@ -340,6 +342,14 @@ li{
         width: 50%;
     }
 }
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
 @keyframes php{
     0%{
         width: 0%;
@@ -348,14 +358,7 @@ li{
         width: 30%;
     }
 }
-@keyframes react{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 44%;
-    }
-}
+ 
 .about_parent{
     display: flex;
     justify-content: center;
@@ -729,22 +732,18 @@ flex-direction:column-reverse;
     margin-left: 110px;
     animation: java_per 3s;
 }
+.skills_per_react{
+    margin-top: -60px;
+    margin-left: 110px;
+    animation: react_per 3s;
+}
 
 .skills_per_php{
     margin-top: -60px;
     margin-left: 60px;
     animation: php_per 3s;
 }
-.skills_per_react{
-    position: absolute;
-    margin-top: -60px;
-    padding: 5px;
-    background: linear-gradient(125deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
-    border-radius: 15px;
-    margin-left:95px;
-    font-weight: bold;
-    animation: react_per 3s;
-}
+ 
  
 @keyframes  html_per{
     0%{
@@ -771,6 +770,14 @@ flex-direction:column-reverse;
         margin-left:110px;
     }
 }
+@keyframes  react_per{
+    0%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left:110px;
+    }
+}
 @keyframes  php_per{
     0%{
         margin-left: 10px;
@@ -779,14 +786,7 @@ flex-direction:column-reverse;
         margin-left:60px;
     }
 }
-@keyframes  react_per{
-    0%{
-        margin-left: 10px;
-    }
-    100%{
-        margin-left:95px;
-    }
-}
+ 
 
 .skills{
     width: 315px;
