@@ -23,28 +23,48 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color: #2f3046;
+    
 
 }
 .navlinks li {
-    margin-top: 15px;
+    
     list-style: none;
-     margin-left: 30px;
-     padding: 10px 20px;
-      transition:all .5s ease;
-     border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+    transition:all .5s ease;
+    border-radius: 5px;
+    margin-top: 10px;
+     
+}
+
+.shortlinks::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 10px;
+
+    transition: all .5s ease;
+}
+.shortlinks:hover::after{
+    left: 0%;
+    width: 100%;
+    
 }
 .navlinks li a{
     text-decoration: none;
     color: aliceblue;
     transition: .3s;
     font-weight: bold;
+    font-size: 20px;
 }
-.navlinks li  a:hover{
-    border-bottom: 1px solid aliceblue;
-    margin-top: 50px; 
-    padding: 10px 20px;
-    color:aqua ;
-}
+ .navlinks li  a:hover{
+    
+    color: aqua ;
+}  
 /* .toggle_btn {
     width: 35px;
     position: absolute;
@@ -650,7 +670,9 @@ box-shadow: 0 0 5px #03e9f4,
 }
 .navlinks li {  
     margin-top: 80px;
-    margin-left: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
     
 }
 #bar{
