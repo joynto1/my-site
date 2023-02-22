@@ -23,6 +23,7 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color: #2f3046;
+
     
 
 }
@@ -665,10 +666,10 @@ box-shadow: 0 0 5px #03e9f4,
  .navlinks  {
         justify-content: left;
         flex-direction: column;
-        position: fixed;
+        position:  absolute;
         height: 100vh; 
         top: 0px;
-        background:#0f1f51b4;
+        background:#09122cb4;
         display: none;
         width: 80%;
         right: 0%;
@@ -684,7 +685,7 @@ box-shadow: 0 0 5px #03e9f4,
 }
 #bar{
     display: block;
-    position: fixed;
+     
 }
 #cancel{
     position: fixed;
