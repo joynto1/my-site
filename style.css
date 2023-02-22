@@ -670,14 +670,14 @@ box-shadow: 0 0 5px #03e9f4,
         top: 0px;
         background:#0f1f51b4;
         display: none;
-        width: 50%;
+        width: 80%;
         right: 0%;
         transition: all 1s ease-out;
         text-align: center;        
 }
 .navlinks li {  
     margin-top: 80px;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-right: 100px;
     
     
