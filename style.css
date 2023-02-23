@@ -8,6 +8,7 @@ body{
 nav{
     display: flex;
     margin-top: 10px;
+    
     justify-content: space-around;
     align-items: center;
     height: 8vh;
@@ -664,17 +665,19 @@ box-shadow: 0 0 5px #03e9f4,
 @media (max-width:858px){
     
  .navlinks  {
-        justify-content: left;
+        justify-content:   unset;
         flex-direction: column;
-        position:  absolute;
+        position:  fixed;
         height: 100vh; 
         top: 0px;
-        background:#09122cb4;
+        background:#0b092bb4;
+        
         display: none;
         width: 80%;
         right: 0%;
         transition: all 1s ease-out;
-        text-align: center;        
+        text-align: center;   
+        
 }
 .navlinks li {  
     margin-top: 80px;
@@ -682,9 +685,11 @@ box-shadow: 0 0 5px #03e9f4,
     margin-right: 100px;
     
     
+    
 }
 #bar{
     display: block;
+    
      
 }
 #cancel{
@@ -699,9 +704,10 @@ box-shadow: 0 0 5px #03e9f4,
 #navbar.show{
     display:block;
     
+    
 }  
 .image img{
-    position:static;
+    position: relative;
     width: 50%;
     margin-left: 25%;
     
