@@ -10,6 +10,7 @@ var typed = new Typed('.text-second', {
 function sidebar(){
     var navbar = document.getElementById("navbar");
     navbar.classList.toggle("show");
+     
   };
   
 

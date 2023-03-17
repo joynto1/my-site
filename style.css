@@ -4,6 +4,7 @@ body{
     background-color: #2f3046;
     color: aliceblue;
     
+    
 }
 nav{
     display: flex;
@@ -24,8 +25,8 @@ nav{
     display: flex;
     justify-content: space-around;
     background-color: #2f3046;
-
     
+
 
 }
 .navlinks li {
@@ -149,13 +150,23 @@ h5{
     font-size: 80px;
     margin-bottom: 30px;
 }
+
 .image img{
-    width: 60%;
+    width: 50%;
+    position: relative;
     border-radius: 500px;
     margin-left: 30%;
-    margin-top: 30px;
-     
+    margin-top: 0px;  
+    animation: amar_sobi 1.5s infinite;
+    padding: 0px;
+    box-shadow:0 40px 48px rgba(64, 252, 227, 0.25),0 30px 30px rgba(4, 193, 250, 0.22) ; 
 }
+@keyframes amar_sobi{
+    50%{
+        margin-top: 20px;
+    }
+}
+
 /* @keyframes image_img{
     50%{
         top:10px;
@@ -665,14 +676,13 @@ box-shadow: 0 0 5px #03e9f4,
 @media (max-width:858px){
     
  .navlinks  {
-        justify-content:   unset;
+        
         flex-direction: column;
-        position:  fixed;
+        position: fixed  ;
         height: 100vh; 
         top: 0px;
-        background:#0b092bb4;
-        
-        display: none;
+        background:black;
+        display:   none;
         width: 80%;
         right: 0%;
         transition: all 1s ease-out;
@@ -682,43 +692,54 @@ box-shadow: 0 0 5px #03e9f4,
 .navlinks li {  
     margin-top: 80px;
     margin-left: 0px;
-    margin-right: 100px;
-    
-    
-    
+    margin-right: 100px;   
 }
 #bar{
     display: block;
-    
-     
 }
 #cancel{
     position: fixed;
 }
+ 
 #check:checked~label #bar{
     display: none;
    }
    #check:checked~label #cancel{
     display: block;
    }
-#navbar.show{
+ 
+#navbar.show {
     display:block;
     
     
 }  
+
 .image img{
-    position: relative;
+    position: absolute;
     width: 50%;
-    margin-left: 25%;
+    margin-left: -23%;
+    animation: amar_sobi 1.5s infinite;
     
 }
 .profile{
-flex-direction:column-reverse; 
+    
+flex-direction:column-reverse ;
    
 
 }
+
+@keyframes amar_sobi{
+    
+    50%{
+         margin-top: 10px;
+          
+         
+        
+    }
+     
+}
 .profile_details{
-    margin-top:0px;
+    margin-top:200px;
 }
 
 .work{
