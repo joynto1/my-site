@@ -9,7 +9,6 @@ body{
 nav{
     display: flex;
     margin-top: 10px;
-    
     justify-content: space-around;
     align-items: center;
     height: 8vh;
@@ -22,12 +21,9 @@ nav{
     
 }
 .navlinks{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     background-color: #2f3046;
-    
-
-
 }
 .navlinks li {
     
@@ -90,7 +86,8 @@ nav{
 input{
     display: none;
 }
-#bar{
+#bar,#cancel{
+    
     position: absolute;
     font-size: 40px;
     right: 50px;
@@ -98,16 +95,7 @@ input{
     align-items: center;
     cursor: pointer;
     display: none;
-}
-#cancel{
-    position: absolute;
-    font-size: 40px;
-    right: 250px;
-    top: 20px;
-    align-items: center;
-    cursor: pointer;
-    display: none;
-}
+} 
 
 /* profile///////////////////////////// */
 .profile{
@@ -144,7 +132,7 @@ h5{
 }
 .profile_details h5{
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .profile_details h1{
     font-size: 80px;
@@ -198,16 +186,43 @@ border-radius: 5px;
     
 }
 .skills_parent{
-    display: flex;
+    grid-template-columns: auto auto;
+    display: grid;
+    column-gap: 100px;
     justify-content: center;
     margin-top: 100px;
+}
+.more_projects{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0px;
+    font-weight: bold;
 }
 .skills{
     width: 500px;
     margin: 20px 0;
-    padding: 30px;
+    padding: 30px ;
     box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
+}
+#projects li{
+    font-weight: bold;
+    padding: 5px 20px;
+
+}
+#projects li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: .5s ease-in;
+}
+#projects li a:hover{
+    color: #38d6f1;
+    background-color: #fff;
 }
 .skills_tittle{
     padding: 20px;
@@ -237,6 +252,15 @@ li{
 .html{
     width: 97%;
     animation: html 3s;
+}
+ 
+#projects li a{
+    font-size: 18px;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: .5s ease-in;
 }
 .skills_per_html{
     position: absolute;
@@ -636,64 +660,31 @@ box-shadow: 0 0 5px #03e9f4,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ?????????????????????????//mobile varsion */
+/* ////////////////////////////////////    <--      mobile varsion       -->    /////////////////////////////////////////////////////////// */
 @media (max-width:858px){
-    
- .navlinks  {
-        
-        flex-direction: column;
-        position: fixed  ;
-        height: 100vh; 
-        top: 0px;
-        background:black;
-        display:   none;
-        width: 80%;
-        right: 0%;
-        transition: all 1s ease-out;
-        text-align: center;   
-        
+    nav{
+        display: contents;
+    }
+ .navlinks {
+    background-color:  #2f3046;    
+    display: none;
+    height: 90vh;
+    margin-top: 0px;
 }
 .navlinks li {  
-    margin-top: 80px;
-    margin-left: 0px;
-    margin-right: 100px;   
+    padding: 20px 10px; 
+    text-align: center;
+    
+    
+} 
+.navlinks li a{
+    font-size: 40px;
 }
+#navbar.show {
+   
+    display:block;
+
+}  
 #bar{
     display: block;
 }
@@ -708,16 +699,16 @@ box-shadow: 0 0 5px #03e9f4,
     display: block;
    }
  
-#navbar.show {
-    display:block;
-    
-    
-}  
 
+h5.hi {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
 .image img{
     position: absolute;
     width: 50%;
     margin-left: -23%;
+    margin-top: 130px;
     animation: amar_sobi 1.5s infinite;
     
 }
@@ -731,7 +722,7 @@ flex-direction:column-reverse ;
 @keyframes amar_sobi{
     
     50%{
-         margin-top: 10px;
+         margin-top: 120px;
           
          
         
@@ -739,7 +730,7 @@ flex-direction:column-reverse ;
      
 }
 .profile_details{
-    margin-top:200px;
+    margin-top:300px;
 }
 
 .work{
@@ -774,6 +765,9 @@ flex-direction:column-reverse ;
     flex-direction: column;
     justify-content: space-between;
 
+}
+.skills_parent{
+    grid-template-columns: auto;
 }
 .skills_per_html{
     margin-top: -60px;
@@ -910,12 +904,6 @@ input.form_gmail{
    margin-left: 250px;
    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
 
-}
-
-
-
-
-
-
+ }
 
 }
