@@ -47,7 +47,7 @@ function sidebar(){
   
   ScrollReveal({
     reset:true,
-    distance:"100px",
+    distance:"-100px",
     duration:2500,
     delay:300
   }).reveal('form',{delay:500,origin:"right"});

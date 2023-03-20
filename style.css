@@ -432,7 +432,7 @@ li{
     margin-top: 100px;
     padding: 25px;
     box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
- 
+   border-radius: 10px;
     
     
 }
