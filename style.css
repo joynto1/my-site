@@ -1,6 +1,6 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     background-color: #2f3046;
     color: aliceblue;
     
@@ -40,17 +40,18 @@ nav{
     content: '';
     width:0%;
     height: 3px;
-    background: white;
+    background: rgb(5, 245, 225);
     position: absolute;
-    bottom: 0%;
+    bottom: 80%;
     left: 50%;
     border-radius: 10px;
-
+    
     transition: all .5s ease;
 }
 .shortlinks:hover::after{
     left: 0%;
     width: 100%;
+    
     
 }
 .navlinks li a{
@@ -58,9 +59,9 @@ nav{
     color: aliceblue;
     transition: .3s;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
- .navlinks li  a:hover{
+ .navlinks li a:hover {
     
     color: aqua ;
 }  
@@ -137,7 +138,7 @@ h5{
 .profile_details h1{
     font-size: 80px;
     margin-bottom: 30px;
-}
+} 
 
 .image img{
     width: 50%;
@@ -153,18 +154,11 @@ h5{
     50%{
         margin-top: 20px;
     }
+    50%{
+        margin-left: 29.5%;
+    }
 }
-
-/* @keyframes image_img{
-    50%{
-        top:10px;
-        bottom: 10px;
-    }
-    50%{
-        top:100px;
-        bottom: 100px;
-    }
-} */
+ 
  .gmail i,.phone i{
 padding: 5px;
 background-color: rgb(71, 211, 211);
@@ -191,6 +185,10 @@ border-radius: 5px;
     column-gap: 100px;
     justify-content: center;
     margin-top: 100px;
+    animation: skills_parent .5 ease-in infinite;
+}
+@keyframes skills_parent{
+    
 }
 .more_projects{
     display: flex;
@@ -204,7 +202,9 @@ border-radius: 5px;
     padding: 30px ;
     box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
+    
 }
+
 #projects li{
     font-weight: bold;
     padding: 5px 20px;
@@ -554,7 +554,18 @@ input.form_gmail{
     margin-bottom: 20px;
     border: none;
     outline: none;
+    transition: all .5s ease;
     
+}
+input.form_gmail:focus{
+    outline: 1px solid aqua;
+ background-color: #2f3046;
+ color: #fff;
+}
+.form_pass:focus{
+ outline: 1px solid aqua;
+ background-color: #2f3046;
+ color: #fff;
 }
 #your_opinion h2{
     text-align: center;
@@ -579,6 +590,7 @@ input.form_gmail{
     padding: 10px 15px;
     outline: none;
     text-transform: capitalize;
+    transition: all .5s ease
 }
 .submit{
    position: relative;
@@ -890,7 +902,7 @@ footer small{
     margin-top: 50px;
     width: 150%;
     padding: 0px;
-    margin-left: -160px;
+    margin-left: -162px;
 
 
     
@@ -920,20 +932,25 @@ footer small{
 }
 
 
+.opinion_box{
 
+    padding: 0px 20px;
+}
 
 input.form_gmail{ 
-    width: 350px;
+    width: 320px;
      margin-left: 0px;
+     
     
     
 }
 
 .form_pass{
     height: 200px;
-    width: 350px;
+    width: 320px;
     margin-bottom: 20px;
-    margin-left: 0px;
+
+    
     
 }
 .submit{
@@ -949,7 +966,7 @@ input.form_gmail{
    letter-spacing: 2px;
    font-weight: bold;
    overflow: hidden;
-   margin-left: 250px;
+   margin-left: 200px;
    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); 
 
  }
