@@ -690,24 +690,34 @@ box-shadow: 0 0 5px #03e9f4,
 
 /* ////////////////////////////////////    <--      mobile varsion       -->    /////////////////////////////////////////////////////////// */
 @media (max-width:858px){
+    body{
+        margin: 20px;
+        padding: 0px;
+
+
+    }
     nav{
         display: contents;
+         
     }
  .navlinks {
     background-color:  #2f3046;    
     display: none;
     height: 90vh;
+    width: 100%;
     margin-top: 0px;
+    
 }
 .navlinks li {  
-    padding: 20px 10px; 
+    /* padding: 20px 10px;  */
     text-align: center;
-    border-bottom: 1px solid aqua;
+    width: auto;
+    
     
     
 } 
 .navlinks li a{
-    font-size: 40px;
+    font-size: 30px;
 }
 #navbar.show {
    
@@ -716,9 +726,12 @@ box-shadow: 0 0 5px #03e9f4,
 }  
 #bar{
     display: block;
+    margin-top: 20px;
 }
 #cancel{
     position: fixed;
+    margin-top:20px;
+
 }
  
 #check:checked~label #bar{
@@ -737,13 +750,14 @@ h5.hi {
     position: absolute;
     width: 50%;
     margin-left: -23%;
-    margin-top: 130px;
+    margin-top: 30px;
     animation: amar_sobi 1.5s infinite;
     
 }
 .profile{
     
 flex-direction:column-reverse ;
+
    
 
 }
@@ -751,15 +765,13 @@ flex-direction:column-reverse ;
 @keyframes amar_sobi{
     
     50%{
-         margin-top: 120px;
+         margin-top: 20px;
           
-         
-        
     }
      
 }
 .profile_details{
-    margin-top:300px;
+    margin-top:200px;
 }
 
 .work{
@@ -773,7 +785,7 @@ flex-direction:column-reverse ;
     margin-bottom: 30px;
     display: flex;
     justify-content:  space-between;
-    font-size: 35px;
+    font-size: 32px;
     text-align: center;
     
 }
@@ -781,7 +793,7 @@ flex-direction:column-reverse ;
 .text-second{
     color: rgb(223, 19, 223);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
 }
 .gmail,.phone{
     
@@ -913,7 +925,7 @@ footer small{
     align-items: center;
     width: 60%; 
     margin-left: 181px;
-    margin-top: 100px;
+    margin-top: 20px;
     box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
  
     
