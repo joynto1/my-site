@@ -140,6 +140,21 @@ h5{
     margin-bottom: 30px;
 } 
 
+.my_cv a{
+  padding: 10px 10px;
+  background-color:#248799;
+  box-shadow:0 40px 48px rgba(64, 252, 227, 0.25),0 30px 30px rgba(4, 193, 250, 0.22) ; 
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.my_cv a:hover{
+    background-color:#fff ;
+    transition: all .5s;
+    color: #248799;
+}
+
 .image img{
     width: 50%;
     position: relative;
@@ -158,16 +173,8 @@ h5{
         margin-left: 29.5%;
     }
 }
+  
  
- .gmail i,.phone i{
-padding: 5px;
-background-color: rgb(71, 211, 211);
-border-radius: 5px;
-}
-.gmail{
-    margin-bottom: 10px;
-    align-items: center;
-}
 .about{
     
     width:50%;
@@ -757,9 +764,6 @@ h5.hi {
 .profile{
     
 flex-direction:column-reverse ;
-
-   
-
 }
 
 @keyframes amar_sobi{
@@ -795,18 +799,10 @@ flex-direction:column-reverse ;
     font-weight: bold;
     font-size: 17px;
 }
-.gmail,.phone{
-    
-    font-size: 20px;
-    align-items: center;
+.my_cv a{
+    margin-left: 45px;
 }
-.gmailAndohone{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
 .skills_parent{
     grid-template-columns: auto;
 }
