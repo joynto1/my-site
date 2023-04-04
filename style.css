@@ -6,6 +6,10 @@ body{
     
     
 }
+#cv{
+    margin-left: 10px;
+}
+
 nav{
     display: flex;
     margin-top: 10px;
@@ -534,7 +538,110 @@ li{
     transition: all .5s;
     
 }
+/* projects img ////////////////////////////////////////////////////////////////////////////////////////////////////////// */ 
 
+.popular_all_projects{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.projects_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.box{
+    width: 320px;
+    height: 300px;
+    box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+}
+.box img{
+    width:320px;
+    height: 300px;
+    display: block;
+}
+
+.box-content{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.box-content::before,
+.box-content::after{
+
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: #151616c2;
+    position: absolute;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.box-content::before{
+    top: -20%;
+}
+.box-content::after{
+    bottom: -20%;
+}
+:hover.box-content::before{
+    top: 0%;
+    opacity: 0.8;
+}
+:hover.box-content::after{
+    bottom: 0%;
+    opacity: 0.8;
+}
+
+
+
+
+
+.open-site{
+        width: 100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position:  absolute;
+        z-index: 1;
+        opacity:  0 ;
+        transition: all .5s  ;
+        
+        
+    }
+    :hover.open-site{
+        opacity: 1;
+
+    }
+    .open-site a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        position: absolute;
+        margin-top: 30%;
+        margin-left: -90px;
+        padding: 5px 30px;
+        background: #0d98aaad;
+        border-radius: 10px;
+        transition: all .5s ;
+        
+    }
+    .open-site a:hover{
+        color:#2f3046 ;
+        background-color: #fff;
+    }
+    a.open_site{
+        margin-left: -75px;
+    }
 /* dynamic tex */
 .name_titlle{
     color: rgb(220, 54, 220);
@@ -900,6 +1007,17 @@ footer small{
 .two_site{
     margin-bottom: 50px;
 }
+.projects_container{
+     
+    grid-template-columns: auto;
+}
+
+.box{
+
+margin:20px 0px;
+
+}
+
 .about_tittle{
     margin-left: 210px;
     width: 50%;
