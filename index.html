@@ -14,7 +14,7 @@
     <link rel="icon" href="profile-pic.jpeg" >
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <title>My portfolio</title>
+    <title>Joyonto Kumar Das</title>
 </head>
 <body> 
     <nav>
@@ -26,18 +26,18 @@
             <li>
                 <a href="#about_all">About</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#all_skills">My skills</a>
-            </li>
+            </li> -->
             <li>
                 <a href="#contact_me">Contact</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
+            </li> -->
+            <!-- <li>
+                <a href="admin.html">Owner Panel</a>
+            </li> -->
         </ul>
         <div class="menu-toggle" onclick="sidebar()">
             <i id="bar" class="fa-solid fa-bars"></i>
@@ -46,7 +46,7 @@
     </nav>
     
     <hr style="or: rgb(29, 197, 219);">
-<!-- /////////////////////////////Navbar Upore//////////////////// -->
+<!-- ///////////////////////////// Navbar Upore //////////////////// -->
     <section class="hero-section" id="As_profile">
         <div class="container">
             <div class="profile">
@@ -56,19 +56,30 @@
                             <span class="line"></span>
                             <h5 class="hi">Hello, My Name Is</h5>
                         </div>
-                        <h2 class="name">
-                            <span class="name_title">Joyonto</span> Kumar
-                        </h2>
+                        <!-- <h2 class="name">
+                            <span class="name_title underline-effect">Joyonto Kumar</span> <span class="name_last">Das</span>
+                        </h2> -->
                                     <h3 class="work">
-                <span class="text-first">I'm a</span>
+                <!-- <span class="text-first">I'm a</span> -->
                 <span class="typed-text"></span>
             </h3>
                         <p class="hero-description">
-                            I craft responsive websites where technologies meet creativity. Building digital experiences that make people's lives simple.
+                            I’m a CSE graduate with a strong interest in crafting smooth, responsive web experiences using React. I love turning ideas into interactive designs and constantly learning new tools to improve my skills.
                         </p>
                         <div class="hero-buttons">
+                            <div class="hireMe">
+                                <a href="https://www.linkedin.com/in/joyonto-kumar-das-766427243/" target="_blank"  class="cv-button">
+                                    <span class="button-content">
+                                        <span class="button-text">Hire Me</span>
+                                         
+                                    </span>
+                                    <span class="button-border"></span>
+                                    <span class="button-glow"></span>
+                                </a>
+                            </div>
+                             
                             <div class="my_cv">
-                                <a href="Job..pdf" download="CV" class="cv-button">
+                                <a href="Offcial-CV.pdf" download="Joyonto Kumar Das CV" target="_blank" class="cv-button" id="cv-download-link">
                                     <span class="button-content">
                                         <span class="button-text">Download CV</span>
                                         <span class="button-icon">
@@ -113,7 +124,7 @@
 
 
 
-    <section id="all_skills">
+    <!-- <section id="all_skills">
             <div class="skills_parent">
                 <div class="skills" id="front_skills">
                     <h1 class="skills_tittle">My Skills</h1>
@@ -182,7 +193,7 @@
                  </div>
                  </div>
              </div>
-    </section>
+    </section> -->
 
 
 
@@ -190,194 +201,386 @@
 <!-- Projects Section -->
 <section id="projects" class="projects-section">
     <div class="container">
-        <h2 class="section-title">Popular Projects</h2>
-        <div class="projects_container">
-            <article class="project-card">
-                <div class="project-image">
+        <h2 class="section-title">Projects</h2>
+        <!-- Featured Project (Always Visible) -->
+        <div class="new-projects-grid" id="featured-project">
+            <article class="new-project-card">
+                <div class="new-project-image">
                     <img src="healpoint.jpeg" alt="healPoint">
-                    <div class="project-links">
-                        <a href="https://healpoint.netlify.app/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/doc-app" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://healpoint.netlify.app/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/doc-app" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">HealPoint </h3>
-                    <p class="project-description">A Friendly Health Care website with Booking Doctor Appointment.</p>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="Bus-services.jpeg" alt="healPoint">
-                    <div class="project-links">
-                        <a href="https://dhaka-local-bus-info.netlify.app/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/dhaka_local_bus" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">HealPoint </h3>
+                    <p class="new-project-description">A Friendly Health Care website with Booking Doctor Appointment.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Healthcare</span>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Dhaka Local Bus Services </h3>
-                    <p class="project-description">A Friendly Dhaka Local Bus Services website That show Every Bus Route and Bus Stop and Show Also Ticket Price.</p>
+            </article>
+            <!-- Desktop-only projects (2nd and 3rd) -->
+            <article class="new-project-card desktop-only">
+                <div class="new-project-image">
+                    <img src="Bus-services.jpeg" alt="Bus Services">
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://dhaka-local-bus-info.netlify.app/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/dhaka_local_bus" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">Dhaka Local Bus Services </h3>
+                    <p class="new-project-description">A Friendly Dhaka Local Bus Services website That show Every Bus Route and Bus Stop and Show Also Ticket Price.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Transport</span>
+                    </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div class="project-image">
+            <article class="new-project-card desktop-only">
+                <div class="new-project-image">
                     <img src="1.png" alt="Convention Center Project">
-                    <div class="project-links">
-                        <a href="https://joynto1.github.io/Convention-center/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/Convention-center" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://joynto1.github.io/Convention-center/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/Convention-center" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Convention Center</h3>
-                    <p class="project-description">A modern convention center website with booking functionality and responsive design.</p>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">Convention Center</h3>
+                    <p class="new-project-description">A modern convention center website with booking functionality and responsive design.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Events</span>
+                    </div>
                 </div>
             </article>
-
-            <article class="project-card">
-                <div class="project-image">
+        </div>
+        
+        <!-- View All Projects Button -->
+        <div class="view-all-projects">
+            <button class="view-all-btn" onclick="toggleAllProjects()">
+                <span class="btn-text">View All Projects</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        
+        <!-- Hidden Projects Section -->
+        <div id="hidden-projects" style="display: none;">
+            <div class="new-projects-grid">
+            <article class="new-project-card">
+                <div class="new-project-image">
                     <img src="2.png" alt="E-commerce Site">
-                    <div class="project-links">
-                        <a href="https://joynto1.github.io/e-sites/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/e-sites" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://joynto1.github.io/e-sites/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/e-sites" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">E-commerce Website</h3>
-                    <p class="project-description">A full-featured e-commerce platform with product catalog and shopping cart.</p>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">E-commerce Website</h3>
+                    <p class="new-project-description">A full-featured e-commerce platform with product catalog and shopping cart.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">E-commerce</span>
+                    </div>
                 </div>
             </article>
-
-            <article class="project-card">
-                <div class="project-image">
+            <article class="new-project-card">
+                <div class="new-project-image">
                     <img src="3.png" alt="Panda Website">
-                    <div class="project-links">
-                        <a href="https://joynto1.github.io/panda-website/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/panda-website" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://joynto1.github.io/panda-website/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/panda-website" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Panda Website</h3>
-                    <p class="project-description">An interactive website showcasing modern design principles and animations.</p>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">Panda Website</h3>
+                    <p class="new-project-description">An interactive website showcasing modern design principles and animations.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Showcase</span>
+                    </div>
                 </div>
             </article>
-
-            <article class="project-card">
-                <div class="project-image">
+            <article class="new-project-card">
+                <div class="new-project-image">
                     <img src="4.png" alt="Penguin Fashion">
-                    <div class="project-links">
-                        <a href="https://joynto1.github.io/penguin-fasion-tailwind-css/" class="project-link live" target="_blank">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span>Live Demo</span>
-                        </a>
-                        <a href="https://github.com/joynto1/penguin-fasion-tailwind-css" class="project-link github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="new-project-overlay">
+                        <div class="new-project-links">
+                            <a href="https://joynto1.github.io/penguin-fasion-tailwind-css/" class="new-project-link live" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/joynto1/penguin-fasion-tailwind-css" class="new-project-link github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Penguin Fashion</h3>
-                    <p class="project-description">A modern fashion e-commerce site with elegant design and smooth interactions.</p>
+                <div class="new-project-content">
+                    <h3 class="new-project-title">Penguin Fashion</h3>
+                    <p class="new-project-description">A modern fashion e-commerce site with elegant design and smooth interactions.</p>
+                    <div class="new-project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Fashion</span>
+                    </div>
                 </div>
             </article>
+            </div>
+            
+            <!-- Show Less Projects Button at Bottom -->
+            <div class="view-all-projects">
+                <button class="view-all-btn" onclick="toggleAllProjects()">
+                    <i class="fas fa-arrow-up"></i>
+                    <span class="btn-text">Show Less Projects</span>
+                </button>
+            </div>
+        </div>
+        <div class="projects_container" id="dynamic-projects">
+            <!-- New projects from admin.html will appear here -->
+        </div>
+        
+        <!-- New Projects Grid for Admin Panel Projects -->
+        <div class="new-projects-grid" id="admin-projects-grid">
+            <!-- Projects from admin panel will appear here in 3-column grid -->
         </div>
     </div>
 </section>
 
+ 
+ 
+<script>
+// Dynamically load projects from localStorage
+function renderDynamicProjects() {
+    const gridContainer = document.getElementById('static-projects');
+    if (!gridContainer) return;
+    
+    // Only remove previously added dynamic projects, not static ones
+    // We'll mark dynamic projects with a class for easy removal
+    const oldDynamic = gridContainer.querySelectorAll('.dynamic-project-card');
+    oldDynamic.forEach(el => el.remove());
+    
+    const projects = JSON.parse(localStorage.getItem('myProjects') || '[]');
+    projects.forEach(proj => {
+        const gridArticle = document.createElement('article');
+        gridArticle.className = 'new-project-card dynamic-project-card';
+        gridArticle.innerHTML = `
+            <div class="new-project-image">
+                <img src="${proj.image || 'logo.png'}" alt="${proj.title}">
+                <div class="new-project-overlay">
+                    <div class="new-project-links">
+                        ${proj.live ? `<a href="${proj.live}" class="new-project-link live" target="_blank"><i class="fas fa-external-link-alt"></i> <span>Live Demo</span></a>` : ''}
+                        ${proj.github ? `<a href="${proj.github}" class="new-project-link github" target="_blank"><i class="fab fa-github"></i> <span>Source Code</span></a>` : ''}
+                    </div>
+                </div>
+            </div>
+            <div class="new-project-content">
+                <h3 class="new-project-title">${proj.title}</h3>
+                <p class="new-project-description">${proj.description}</p>
+                <div class="new-project-tech">
+                    <span class="tech-tag">Web Development</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+            </div>
+        `;
+        gridContainer.appendChild(gridArticle);
+    });
+}
+document.addEventListener('DOMContentLoaded', renderDynamicProjects);
 
+// CV Download: Use uploaded CV from localStorage if available
+window.addEventListener('DOMContentLoaded', function() {
+    var cvLink = document.getElementById('cv-download-link');
+    var myCV = localStorage.getItem('myCV');
+    if (cvLink && myCV) {
+        cvLink.href = myCV;
+    }
+});
+// Profile Settings: Use name, profile picture, and logo from localStorage if available
+window.addEventListener('DOMContentLoaded', function() {
+    var profile = JSON.parse(localStorage.getItem('profileSettings') || '{}');
+    // Update name
+    if (profile.name) {
+        var nameEls = document.querySelectorAll('.name_title');
+        nameEls.forEach(function(el) { el.textContent = profile.name; });
+    }
+    // Update profile picture
+    if (profile.profilePic) {
+        var profileImgEls = document.querySelectorAll('.profile-img');
+        profileImgEls.forEach(function(el) { el.src = profile.profilePic; });
+    }
+    // Update logo
+    if (profile.logo) {
+        var logoEls = document.querySelectorAll('.logo');
+        logoEls.forEach(function(el) { el.src = profile.logo; });
+    }
+});
 
+// Tab switching functionality
+function showTab(tabName, ev) {
+    // Hide all tab panels
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    tabPanels.forEach(panel => {
+        panel.classList.remove('active');
+    });
+    
+    // Remove active class from all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Show selected tab panel
+    const selectedPanel = document.getElementById(tabName + '-tab');
+    if (selectedPanel) {
+        selectedPanel.classList.add('active');
+    }
+    
+    // Add active class to clicked button (if triggered by a click)
+    const clickedButton = ev ? ev.target.closest('.tab-button') : null;
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
+}
+
+// Initialize tabs on page load - Skills active by default
+document.addEventListener('DOMContentLoaded', function() {
+    // Set default active tab to skills
+    showTab('skills');
+});
+</script>
 
 
     <section id="about_all">
         <div class="container">
-        <div class="about_parent">
+            <div class="about_parent">
                 <h1 class="section-title">About Me</h1>
-           <div class="about_me">
+                <div class="about_me">
                     <div class="about_content">
                         <div class="about_text">
                             <h2 class="about_greeting">Hi there! 👋</h2>
                             <div class="about_description">
-                                <p class="main_text">
-                                    I'm <span class="highlight">Joyonto Kumar</span>, a passionate Front End Developer on a journey to create beautiful and functional web experiences. I've developed my skills through dedicated learning at ProgrammingHero under the guidance of Jhankar Mahbub.
-                                </p>
-                                <div class="expandable-content">
-                                    <p>My expertise includes:</p>
-                                    <ul class="skills-list">
-                                        <li><i class="fas fa-check-circle"></i> HTML5, CSS3, and Modern JavaScript</li>
-                                        <li><i class="fas fa-check-circle"></i> Bootstrap & Tailwind CSS</li>
-                                        <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
-                                        <li><i class="fas fa-check-circle"></i> Currently learning PHP & MySQL</li>
-                                    </ul>
-                                    <p class="vision-text">
-                                        My vision is to create exceptional websites that not only meet but exceed client expectations. I believe in honest work, clear communication, and being there for my clients every step of the way.
-                                    </p>
-                                </div>
+                                <p>I am a recent Computer Science Engineering graduate with a solid foundation in programming, problem-solving. Throughout my academic journey, I have worked on various projects that strengthened my skills in languages like C++, Java, and Python. I’m passionate about learning new technologies and eager to begin my professional journey in the tech industry. I’m looking for opportunities where I can contribute, grow, and develop as a frontend developer.</p>
                             </div>
-                            <button class="read-more-btn" onclick="toggleContent()">
-                                <span class="btn-text">Read More</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
                         </div>
                     </div>
-                    <div class="about_image">
-                        <div class="image-wrapper">
-                            <img src="profile-pic.jpeg" alt="Joyonto Kumar">
-                            <div class="social-links">
-                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    
+                    <!-- Skills and Education Tabs -->
+                    <div class="about_table_section">
+                        <div class="table-container">
+                            <div class="table-header">
+                                <button class="tab-button active" onclick="showTab('skills', event)">
+                                    <i class="fas fa-code"></i>
+                                    <span>Skills</span>
+                                </button>
+                                <button class="tab-button" onclick="showTab('education', event)">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Education</span>
+                                </button>
                             </div>
-                    </div> 
+                            
+                            <div class="tab-content">
+                                <!-- Skills Tab - Active by Default -->
+                                <div id="skills-tab" class="tab-panel active">
+                                    <div class="skills-grid">
+                                        <div class="skill-category">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                                                <li><i class="fas fa-check"></i> JavaScript (ES6+)</li>
+                                                <li><i class="fas fa-check"></i> React.js</li>
+                                                <li><i class="fas fa-check"></i> Bootstrap & Tailwind CSS</li>
+                                                <li><i class="fas fa-check"></i> Responsive Web Design</li>
+                                                <li><i class="fas fa-check"></i> C,C++,Python</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Education Tab -->
+                                <div id="education-tab" class="tab-panel">
+                                    <div class="education-timeline">
+                                        <div class="education-item">
+                                            <div class="education-icon">
+                                                <i class="fas fa-university"></i>
+                                            </div>
+                                            <div class="education-content">
+                                                <h3>B.Sc in Computer Science & Engineering</h3>
+                                                <p class="education-type">Northern University Bangladesh</p>
+                                                <p class="education-duration">Year : 2022 - 2025</p>
+                                                <p class="education-description">
+                                                    Comprehensive study of computer science fundamentals, algorithms, 
+                                                    data structures, and software engineering principles.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-           </div>
+                </div>
+            </div>
         </div>
     </section>
 
 <section id="contact_me">
     
-    <form class="form-and-section" action=""> 
+    <form class="form-and-section" id="contact-form" action="javascript:void(0)"> 
      <div class="opinion_box">
-        <h2>Get in Touch</h2>
-         <input class="form_gmail" type="text" placeholder="Enter your Gmail or username">
-         <textarea class="form_pass" placeholder="write some words to your opinion" name="message" id="" s="30" rows="3"></textarea> 
-         <a href="" class="submit">
-            
-              Submit
+        <h2>Message Send Form</h2>
+         <input class="form_gmail" type="email" id="contact-email" placeholder="Enter your Gmail " required>
+         <input class="form_topic" type="text" id="contact-topic" placeholder="Enter your  Topic Name" required>
+         <textarea class="form_pass" placeholder="write a message" id="contact-message" rows="3" required></textarea> 
+         <button type="submit" class="submit">
+              Send Message
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-        </a>  
+        </button>  
+        <p id="contact-status" style="text-align: center; margin-top: 1rem; display: none;"></p>
      </div>
      <div class="footer-section social-section">
         <h3 class="footer-title">Follow Me</h3>
@@ -417,16 +620,13 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <h3 class="footer-title">Get in Touch</h3>
+                <h3 class="footer-title ">Get in Touch</h3>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:your.email@example.com">joyonto.info@gmail.com</a>
+                        <a href="mailto:mr.joyontokumardas@gmail.com">mr.joyontokumardas@gmail.com</a>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">+880 1865875819</a>
-                    </div>
+                   
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Sarda Ganj, Gazipur, Bangladesh</span>
@@ -434,18 +634,120 @@
                 </div>
             </div>
         </div>
-        <p class="footer-label-text">&copy; <span id="current-year"></span>  Joyonto Kumar. All rights reserved. br Terms of Service || Privacy Policy  </p> 
+        <p class="footer-label-text">&copy;<span id="current-year"> 2025 </span>  || Joyonto Kumar Das ||  All rights reserved.</p> 
     </div>
    
-    <div class="scroll-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+   
 </footer>
 
     
 
+    <style>
+    /* Admin Messages Styles */
+    .admin-messages-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background: #112240;
+        border: 1px solid rgba(100,255,218,0.15);
+        border-radius: 12px;
+    }
+    .admin-messages-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: #64ffda;
+        font-weight: 600;
+    }
+    .messages-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .messages-empty {
+        color: #8892b0;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .message-content strong { color: #e6f1ff; }
+    .delete-message-btn {
+        background: #ff6b6b;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    .delete-message-btn:hover { background: #ff5252; }
+ 
+        /* View All Projects Button Styles */
+        .view-all-projects {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .view-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #64ffda, #0a192f);
+            color: #0a192f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #64ffda;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .view-all-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a192f, #64ffda);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+        
+        .view-all-btn:hover {
+            color: #64ffda;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.3);
+        }
+        
+        .view-all-btn:hover::before {
+            left: 0;
+        }
+        
+        .view-all-btn i {
+            transition: transform 0.3s ease;
+        }
+        
+        .view-all-btn:hover i {
+            transform: translateX(5px);
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-     <script src="app.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="app.js"></script>
     
 
 </body>

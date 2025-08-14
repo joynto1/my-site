@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Messages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1.1" />
+  <link rel="icon" href="profile-pic.jpeg" />
+  <style>
+    .admin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .admin-actions a {
+      color: #64ffda;
+      text-decoration: none;
+    }
+    .admin-actions a:hover { text-decoration: underline; }
+  </style>
+  <script src="https://kit.fontawesome.com/511a88ddd3.js" crossorigin="anonymous"></script>
+</head>
+<body style="background:#0a192f;color:#e6f1ff;">
+  <div class="container admin-container" style="max-width: 960px;">
+    <div class="admin-header">
+      <h1 class="admin-title" style="margin: 1rem 0;">Admin Panel</h1>
+      <div class="admin-actions">
+        <a href="index.html">← Back to site</a>
+      </div>
+    </div>
+
+    <div class="admin-section">
+      <h2><i class="fas fa-inbox"></i> Messages</h2>
+      <div id="admin-messages-section" style="display:block;">
+        <div id="messages-loading">Loading…</div>
+        <ul id="messages-list" class="messages-list project-list"></ul>
+        <div id="messages-empty" class="messages-empty" style="display:none;">No messages yet</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
