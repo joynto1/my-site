@@ -51,7 +51,7 @@ nav {
     text-decoration: none;
     color: #e6f1ff;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -2400,8 +2400,8 @@ nav {
 }
 
 .tab-content {
-    padding: 2rem;
-    min-height: 400px;
+    
+    min-height: 100px;
 }
 
 .tab-panel {
@@ -2429,8 +2429,8 @@ nav {
 }
 
 .skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(100, 255, 218, 0.1);
+    /* transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(100, 255, 218, 0.1); */
     border-color: rgba(100, 255, 218, 0.3);
 }
 
@@ -2481,7 +2481,7 @@ nav {
 }
 
 .education-item {
-    
+    text-align: center;
     gap: 1.5rem;
     padding: 1.5rem;
     background: rgba(100, 255, 218, 0.05);
@@ -2635,7 +2635,7 @@ nav {
     }
     
     .education-content h3 {
-        font-size: 1.1rem;
+        font-size: 0.94rem;
     }
 }
 
